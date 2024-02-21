@@ -3,8 +3,7 @@ codeunit 71264333 "CAVSB Licensing Install"
     Subtype = Install;
 
     var
-        GumroadTestSubscriptionIdTok: Label 'b08c8cbe-ff20-4c38-9448-21e68b509e84';
-        LemonSqueezyTestSubscriptionIdTok: Label '62922d07-87e2-4959-aece-2cacf9222e9b';
+        CavalloProfitScanSubscriptionIdTok: Label '6fa64f0a-fad4-4d5a-8c84-b2de9fd96fa8';
 
     trigger OnInstallAppPerDatabase()
     var
@@ -16,24 +15,13 @@ codeunit 71264333 "CAVSB Licensing Install"
 
     procedure PerformInstallOfTestSubscriptions()
     begin
-        AddTestProduct(Enum::"CAVSB License Platform"::Gumroad, GumroadTestSubscriptionIdTok);
-        AddTestProduct(Enum::"CAVSB License Platform"::LemonSqueezy, LemonSqueezyTestSubscriptionIdTok);
-    end;
-
-    procedure GetGumroadTestAppId() TestProductGuid: Guid
-    begin
-        Evaluate(TestProductGuid, GumroadTestSubscriptionIdTok);
-    end;
-
-    procedure GetLemongSqueezyTestAppId() TestProductGuid: Guid
-    begin
-        Evaluate(TestProductGuid, LemonSqueezyTestSubscriptionIdTok);
+        AddTestProduct(Enum::"CAVSB License Platform"::CavalloProfitScan, CavalloProfitScanSubscriptionIdTok);
     end;
 
     internal procedure AddTestProduct(WhichLicensePlatform: Enum "CAVSB License Platform"; TestProductId: Text)
     var
         CAVExtensionLicense: Record "CAVSB Extension License";
-        TestLicenseNameTok: Label '%1 Test Subscription', Comment = '%1 is the Licensing Extension name.';
+        TestLicenseNameTok: Label '%1 Subscription', Comment = '%1 is the Licensing Extension name.';
         LicensePlatform: Interface "CAVSB ILicenseCommunicator2";
         AppInfo: ModuleInfo;
         TestProductGuid: Guid;

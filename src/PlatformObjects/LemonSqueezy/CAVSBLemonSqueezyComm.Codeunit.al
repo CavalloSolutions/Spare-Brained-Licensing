@@ -1,3 +1,4 @@
+/**
 codeunit 71264336 "CAVSB LemonSqueezy Comm." implements "CAVSB ILicenseCommunicator", "CAVSB ILicenseCommunicator2"
 {
     var
@@ -239,3 +240,4 @@ codeunit 71264336 "CAVSB LemonSqueezy Comm." implements "CAVSB ILicenseCommunica
         exit(LemonSqueezyBillingEmailTok);
     end;
 }
+*/
