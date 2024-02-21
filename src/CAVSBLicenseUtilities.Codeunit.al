@@ -15,10 +15,4 @@ codeunit 71264323 "CAVSB License Utilities"
         LicensePlatform := CAVExtensionLicense."License Platform";
         exit(LicensePlatform.GetTestProductKey());
     end;
-
-    [Obsolete('Use new Events in CAVSB Events codeunit.')]
-    [IntegrationEvent(false, false)]
-    local procedure OnBeforeLaunchProductUrl(var CAVExtensionLicense: Record "CAVSB Extension License"; var IsHandled: Boolean)
-    begin
-    end;
 }

@@ -181,10 +181,4 @@ codeunit 71264335 "CAVSB Gumroad Communicator" implements "CAVSB ILicenseCommuni
     begin
         exit(GumroadBillingEmailTok);
     end;
-
-    [Obsolete('This event is moved to the central License Management codeunit for platform-agnostic eventing.')]
-    [IntegrationEvent(false, false)]
-    local procedure OnAfterThrowPossibleMisuse(CAVExtensionLicense: Record "CAVSB Extension License")
-    begin
-    end;
 }

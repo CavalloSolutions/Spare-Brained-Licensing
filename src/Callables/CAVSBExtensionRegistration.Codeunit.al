@@ -147,9 +147,4 @@ codeunit 71264326 "CAVSB Extension Registration"
             if GuiAllowed then
                 Error(VersionUpdateRequiredErr, AppInfo.Name, minVersion);
     end;
-
-    [Obsolete('Use CAV Check Active method codeunit instead.')]
-    procedure CheckIfActive(SubscriptionId: Guid; InactiveShowError: Boolean): Boolean
-    begin
-    end;
 }
