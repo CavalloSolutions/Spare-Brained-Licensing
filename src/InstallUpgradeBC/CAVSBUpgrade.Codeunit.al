@@ -34,16 +34,12 @@ codeunit 71264334 "CAVSB Upgrade"
     local procedure Performv21Upgrade()
     var
         CAVExtensionLicense: Record "CAVSB Extension License";
-        CAVSBensingInstall: Codeunit "CAVSB Licensing Install";
         AppInfo: ModuleInfo;
     begin
         // Removing any older Subscriptions that was just for Gumroad
         NavApp.GetCurrentModuleInfo(AppInfo);
         CAVExtensionLicense.SetRange("Extension App Id", AppInfo.Id);
         CAVExtensionLicense.DeleteAll();
-
-        // To using the submodule system to test whatever platforms
-        CAVSBensingInstall.PerformInstallOfTestSubscriptions();
     end;
 
 
