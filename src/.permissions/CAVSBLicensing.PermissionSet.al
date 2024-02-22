@@ -18,5 +18,5 @@ permissionset 71264323 "CAVSB Licensing"
         codeunit "CAVSB Version Check" = X,
         page "CAVSB Extension Licenses" = X,
         page "CAVSB License Activation" = X,
-        codeunit "CAVSB Profit Scan Comm." = X;
+        codeunit "CAVSB Test Comm." = X;
 }

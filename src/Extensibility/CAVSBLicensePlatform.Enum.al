@@ -1,11 +1,11 @@
 enum 71264323 "CAVSB License Platform" implements "CAVSB ILicenseCommunicator", "CAVSB ILicenseCommunicator2"
 {
     Extensible = true;
-    DefaultImplementation = "CAVSB ILicenseCommunicator" = "CAVSB Profit Scan Comm.", "CAVSB ILicenseCommunicator2" = "CAVSB Profit Scan Comm.";
+    DefaultImplementation = "CAVSB ILicenseCommunicator" = "CAVSB Test Comm.", "CAVSB ILicenseCommunicator2" = "CAVSB Test Comm.";
 
-    value(0; CavalloProfitScan)
+    value(0; CavalloTest)
     {
-        Caption = 'Cavallo Profit Scan';
-        Implementation = "CAVSB ILicenseCommunicator" = "CAVSB Profit Scan Comm.", "CAVSB ILicenseCommunicator2" = "CAVSB Profit Scan Comm.";
+        Caption = 'Cavallo Test';
+        Implementation = "CAVSB ILicenseCommunicator" = "CAVSB Test Comm.", "CAVSB ILicenseCommunicator2" = "CAVSB Test Comm.";
     }
 }

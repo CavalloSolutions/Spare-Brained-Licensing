@@ -1,4 +1,4 @@
-codeunit 71264335 "CAVSB Profit Scan Comm." implements "CAVSB ILicenseCommunicator", "CAVSB ILicenseCommunicator2"
+codeunit 71264335 "CAVSB Test Comm." implements "CAVSB ILicenseCommunicator", "CAVSB ILicenseCommunicator2"
 {
     procedure CallAPIForVerification(var CAVExtensionLicense: Record "CAVSB Extension License"; var ResponseBody: Text; IncrementLicenseCount: Boolean) ResultOK: Boolean;
     begin
