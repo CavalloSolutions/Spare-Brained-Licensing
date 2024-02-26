@@ -37,7 +37,7 @@ codeunit 71264337 "CAVSB IsoStore Manager"
                 StoreValue := CryptographyManagement.EncryptText(CopyStr(StoreValue, 1, 215))
             else
                 if GuiAllowed() then
-                    Error('To use Spare Brained Licensing On-Prem, Database Encryption must be enabled.');
+                    Error('To use Cavallo Licensing On-Prem, Database Encryption must be enabled.');
 
         IsolatedStorage.Set(StrSubstNo(NameMapTok, CAVExtensionLicense."Entry Id", StoreName), StoreValue, DataScope::Module);
     end;

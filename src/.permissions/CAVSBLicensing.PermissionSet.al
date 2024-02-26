@@ -1,7 +1,7 @@
 permissionset 71264323 "CAVSB Licensing"
 {
     Assignable = true;
-    Caption = 'Spare Brained Licensing Admin';
+    Caption = 'Cavallo Licensing Admin';
     Permissions = table "CAVSB Extension License" = X,
         tabledata "CAVSB Extension License" = RMI,
         codeunit "CAVSB Activate Meth" = X,
